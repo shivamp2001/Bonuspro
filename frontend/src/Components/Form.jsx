@@ -64,8 +64,10 @@ const navigate=useNavigate()
   }
   // const[inputs,setinputs]=useState()
   return (
+    <div style={{background:"#CCFFFF",width:1440,height:781}}>
     <div className="mainform" >
-      <form onSubmit={formik.handleSubmit}>
+      <form onSubmit={formik.handleSubmit} style={{marginTop:130}}>
+        <h1>Add User Data</h1><br />
         <label htmlFor="fname">FirstName</label>
         <input
          
@@ -113,6 +115,7 @@ const navigate=useNavigate()
         /><p style={{margin:0,color:"red"}}>{formik.errors.monumber}</p><br />
         <button className="btn" type="submit" >submit</button>
       </form>
+    </div>
     </div>
   );
 };

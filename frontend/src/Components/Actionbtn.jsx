@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+let arr=[]
 const Actionbtn = () => {
   const [btn, setbtn] = useState();
   const [clicktime, setclicktime] = useState();
@@ -7,6 +7,7 @@ const Actionbtn = () => {
     let btna = "Button A";
     let time = new Date().toLocaleTimeString()
     // let now=time
+    arr=btna
     setbtn(btna);
     setclicktime(time);
   };

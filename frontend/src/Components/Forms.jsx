@@ -11,6 +11,9 @@ const Forms = () => {
   const redirect=()=>{
 navigate("/buttons")
   }
+  const redirect2=()=>{
+navigate("/")
+  }
   const fetchform = async () => {
     let res = await axios
       .get("http://localhost:5000/getallform")
@@ -42,7 +45,9 @@ navigate("/buttons")
           <UserData user={user} />
        
       </table>
-      <button style={{padding:10,marginLeft:1000, background:"skyblue"}} onClick={redirect}>Show Next feature</button>
+      <div >
+      <button style={{padding:10,marginLeft:250,background:"skyblue"}} onClick={redirect2}>Add New User</button>
+      <button style={{padding:10,marginLeft:700,background:"skyblue"}} onClick={redirect}>Show Next feature</button></div>
     </div>
   );
 };
